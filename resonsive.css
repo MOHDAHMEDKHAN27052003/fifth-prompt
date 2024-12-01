@@ -1,0 +1,49 @@
+/* Large screens (laptops, desktops) */
+@media (min-width: 1200px) {
+    /* Styles for larger screens */
+  }
+  
+  /* Medium screens (tablets in landscape) */
+  @media (max-width: 1024px) {
+    /* Styles for tablets or small laptops */
+    header{
+      justify-content: space-around;
+    }
+
+    #nav-links, #nav-icons{
+      display: none;
+    }
+
+    .ri-menu-line{
+      display: initial;
+    }
+
+    main{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
+  /* Small screens (tablets in portrait) */
+  @media (max-width: 768px) {
+    /* Styles for portrait tablets or large phones */
+    #order-button{
+      margin-bottom: 15px;
+    }
+
+    main #content{
+      padding: 75px 15px;
+    }
+  }
+  
+  /* Extra small screens (mobile) */
+  @media (max-width: 480px) {
+    /* Styles for phones */
+    header{
+      justify-content: space-between;
+    }
+
+    main img{
+      width: 66%;
+    }
+  }  
